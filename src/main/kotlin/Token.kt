@@ -1,6 +1,6 @@
 package com.craftinginterpreters.lox
 
-internal class Token(val type: TokenType, val lexeme: String, val literal: Any?, val line: Int) {
+internal class Token(private val type: TokenType, private val lexeme: String, private val literal: Any?, private val line: Int) {
     override fun toString(): String {
         return "$type $lexeme $literal"
     }

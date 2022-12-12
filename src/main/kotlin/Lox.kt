@@ -8,7 +8,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 object Lox {
-    var hadError = false
+    private var hadError = false
 
     @Throws(IOException::class)
     @JvmStatic
@@ -49,7 +49,7 @@ object Lox {
 
         // For now, just print the tokens.
         for (token in tokens) {
-            System.out.println(token)
+            println(token)
         }
     }
 
